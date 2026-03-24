@@ -1,0 +1,171 @@
+/* ================= BODY ================= */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #dfe3ea;
+}
+
+/* ================= LOGIN & REGISTER CARD ================= */
+
+.card {
+    width: 500px;
+    margin: 120px auto;
+    background: #f2f3f5;
+    padding: 35px;
+    border-radius: 12px;
+    box-shadow: 0px 5px 18px rgba(0,0,0,0.18);
+}
+
+/* ================= HEADER INSIDE CARD ================= */
+
+.card-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.card-logo {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    margin-right: 15px;
+}
+
+.title-main {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.title-sub {
+    font-size: 14px;
+    color: #777;
+    margin-top: 2px;
+}
+
+.page-heading {
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* ================= FORM ================= */
+
+label {
+    font-size: 14px;
+}
+
+input, select {
+    width: 100%;
+    padding: 11px;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    border-radius: 6px;
+    border: 1px solid #c7c7c7;
+    font-size: 14px;
+}
+
+button {
+    width: 100%;
+    padding: 11px;
+    background: linear-gradient(to right, #3b6eea, #2f5bd3);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.96;
+}
+
+.bottom-link {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+/* ================= CHAT HEADER ================= */
+
+.chat-header {
+    background-color: #d8c7a2;
+    padding: 12px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.chat-left {
+    display: flex;
+    align-items: center;
+}
+
+.chat-logo {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    margin-right: 10px;
+}
+
+.logout {
+    text-decoration: none;
+    color: purple;
+    font-weight: 500;
+}
+
+/* ================= CHAT AREA ================= */
+
+.chat-area {
+    width: 70%;
+    margin: 40px auto 120px auto;
+}
+
+/* User bubble */
+.user-msg {
+    background-color: #3b6eea;
+    color: white;
+    padding: 10px;
+    border-radius: 12px;
+    margin: 10px 0;
+    text-align: right;
+}
+
+/* Bot bubble */
+.bot-msg {
+    background-color: #e0e0e0;
+    padding: 10px;
+    border-radius: 12px;
+    margin: 12px 0;
+    text-align: left;
+}
+
+/* ================= INPUT BAR ================= */
+
+.input-section {
+    position: fixed;
+    bottom: 15px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.input-section input {
+    width: 65%;
+    padding: 13px;
+    border-radius: 25px;
+    border: 1px solid #c7c7c7;
+}
+
+.input-section button {
+    width: 60px;
+    margin-left: 8px;
+    border-radius: 25px;
+}
+.chat-area {
+    min-height: 400px;
+    padding-bottom: 120px;
+    width: 70%;
+    margin: 40px auto 120px auto;
+}
