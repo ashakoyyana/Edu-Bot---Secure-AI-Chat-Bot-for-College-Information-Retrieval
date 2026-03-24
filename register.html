@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="card">
+
+    <div class="card-header">
+        <img src="{{ url_for('static', filename='logo.jpeg') }}" class="card-logo">
+        <div>
+            <div class="title-main">EDUBOT</div>
+            
+        </div>
+    </div>
+
+    <div class="page-heading">Create Account</div>
+
+    {% if error %}
+        <p style="color:red;">{{ error }}</p>
+    {% endif %}
+
+    <form method="POST">
+        <label>Email Address</label>
+        <input type="text" name="username" required>
+
+        <label>Password</label>
+        <input type="password" name="password" required>
+
+        <label>Role</label>
+        <select name="role" required>
+            <option value="student">Student</option>
+            <option value="faculty">Faculty</option>
+        </select>
+
+        <button type="submit">Register</button>
+    </form>
+
+    <div class="bottom-link">
+        <a href="/">Back to Login</a>
+    </div>
+
+</div>
+
+</body>
+</html>
